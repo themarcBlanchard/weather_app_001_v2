@@ -1,0 +1,24 @@
+{
+  "name": "weather__app_001",
+  "version": "1.0.0",
+  "description": "A small version of the weather app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themarcBlanchard/weather_api_001.git"
+  },
+  "keywords": [
+    "weather",
+    "app",
+    "tempest"
+  ],
+  "author": "Marc Blanchard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themarcBlanchard/weather_api_001/issues"
+  },
+  "homepage": "https://github.com/themarcBlanchard/weather_api_001#readme"
+}

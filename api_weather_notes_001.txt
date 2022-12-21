@@ -1,0 +1,54 @@
+/======================== Working with the Weather API ===========================/
+- The best weather API is OpenWeatherAPI
+    -- Create a account
+    -- Choose the Current Weather API 
+
+- Save the API Key in another JS file.
+
+- Create a get weather function in the JS logic file. That function will fetch the details from the API
+and display them.
+
+    fn => let getWeather = () => {
+
+    }
+
+- Create a function that as soon as the page finish loading, it will the 
+getWeather() function.
+
+    fn => window.addEventListener("load", getWeather);
+
+- Inside the getWeather function, create a varuabe called url and assign the url link that the OpenWeatherAPI
+gives you and insert the code.
+
+- It depends on how many data you're going to show. 
+If you're showing city:
+    city => let city = city.value;
+
+- Have to check if input field is empty if you're adding a search function.
+If it is empty, alert the user to input a city.
+If it's not, feth the data from the API. 
+
+- The fetch(url) function is used to search for data on the API.
+
+    function => fetch(url).then((resp) => resp.json())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(() => {
+                        // Not found
+                    });
+
+- The resp is the response the API call will get and it will turn it
+into a JSON format. 
+
+- Then the data logs/displays everything. You have to specify the data that you want. Documentation of the API. 
+As an example, if you want the weather name:
+
+    example: then(data => {
+        console.log(data.weather);
+    })
+If you want the icon for the weather.
+
+    exmaple: then(data => {
+        console.log(data.weather[0].icon);
+    })
